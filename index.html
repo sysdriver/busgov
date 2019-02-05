@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ScriptOffset - инструмент для организации пошаговой работы скрипта</title>
+    <script type="text/javascript" src="http://yandex.st/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scriptoffset.js"></script>
+    <link rel="stylesheet" type="text/css" href="scriptoffset.css">
+  </head>
+  <body>
+    <div class="form">
+        <p>Путь до файла, содержащего ИНН</p>
+        <input id="url" name="url" value="http://busgov-master/data/data.json">
+      <input id="offset" name="offset" type="hidden">
+
+      <div class="progress" style="display: none;">
+        <div class="bar" style="width: 0%;"></div>
+      </div>
+
+      <a href="#" id="runScript"  class="btn" data-action="run">Старт</a>
+      <a href="#" id="refreshScript" class="btn" data-action="stop" style="display: none;">Остановить!</a>
+      <br>
+      <br>
+      <div>
+           <a href="#" id="showTotal"  class="btn" data-action="show">Итоговая таблица</a>
+      </div>
+      
+      <div>
+           <a href="#" id="download"  class="btn" data-action="download">Ссылка для скачивания</a>
+      </div>
+      
+    </div>
+    
+      <div class="out">
+        <div style="margin: 0;"> <mark> Прогресс-тег </mark> <progress id="ptest" max=100><span>0</span>%</progress>
+        </div>
+      </div>
+      
+      <div id="log1">
+          
+      </div>
+	<div id="log">
+          <table id="agc" class="agencies">
+              <thead>
+                  <tr>
+                      <th>Номер</th>
+                      <th>Инн</th>
+                      <th class="name">Наименование</th>
+                      <th>Муниц. задание</th>
+                      <th>ФХД</th>
+                      <th>Целев. средства</th>
+                      <th>Бюдж. смета</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  
+              </tbody>
+          </table>
+      </div>
+      
+
+     
+      <div style="color: #D0D0D0; margin-top: 100px;padding: 30px; " class="out">
+          НИКОГДА! СЛЫШИТЕ?! <br />
+          НИКОГДА БЕЗ НЕОБХОДИМОСТИ НЕ НАЖИМАЙТЕ НА ССЫЛКУ НИЖЕ! <br />
+          ПРИ НАЖАТИИ НА ССЫЛКУ ПРОИСХОДИТ ПОЛНОЕ УДАЛЕНИЕ СОХРАНЕННЫХ ЗАПИСЕЙ!<br />
+          <a style="color: #D0D0D0;" href="#" id="clearDb"  data-action="clearDb">Очистить БД</a>
+      </div>
+      
+  </body>
+</html>

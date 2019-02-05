@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.05.2014, 11:43:21
+    Author     : k-gorbunov
+*/
+
+input {
+    font-size: 13px;
+    margin: 0;
+    padding: 0 3px;
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #808080;
+    display: inline-block;
+    font-size: 13px;
+    height: 26px;
+    line-height: 18px;
+    width: 243px;
+    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.btn {
+    margin: 5px;
+    font-size: 13px;
+    padding: 5px 8px;
+    background-color: #0064CD;
+    background-image: -moz-linear-gradient(center top , #049CDB, #0064CD);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px 3px 3px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-position: 0 -15px;
+}
+
+.btn:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.progress {
+    font-size: 13px;
+    margin: 0;
+    vertical-align: middle;
+    background-color: #F7F7F7;
+    background-image: -moz-linear-gradient(center top , #F5F5F5, #F9F9F9);
+    background-repeat: repeat-x;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    height: 28px;
+    width: 250px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.progress .bar {
+    background-color: #0E90D2;
+    background-image: -moz-linear-gradient(center top , #149BDF, #0480BE);
+    background-size: 40px 40px;
+    -moz-box-sizing: border-box;
+    -moz-transition: width 0.6s ease 0s;
+    background-repeat: repeat-x;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 100%;
+    text-align: left;
+    padding: 5px 8px;
+    font-size: 13px;
+    text-shadow: 1px 1px #333;
+    white-space: nowrap;
+}
+
+div.form {
+    margin: 100px auto 0;
+    width: 500px;
+}
+
+.agencies, td, th {
+    border: 2px solid #CCCCCC;
+    border-collapse: collapse;
+}
+
+th.name {
+    width: 500px !important;
+}
+
+#log, #log1, .out {
+    margin: 50px auto 0;
+    /*max-width: 1000px;*/
+    width: 600px;
+    overflow: hidden;
+}
